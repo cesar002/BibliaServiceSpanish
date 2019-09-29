@@ -68,7 +68,6 @@ _Internamente el arreglo devuelto se contruye de:_
 | Nombre    | Tipo   | Descripción              |
 | --------- | ------ | ------------------------ |
 | value     | String | identificador del libro  |
-| --------- | ------ | ------------------------ |
 | nombre    | String | nombre del libro         |
 
 ---
@@ -244,3 +243,5 @@ _El objeto retornado esta contruido por:_
 | version    | String | clave de la versión         |
 | busqueda   | String | texto a buscar              |
 | versiculos | Array  | Arraglo de versiculos       |
+
+---
