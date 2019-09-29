@@ -38,6 +38,7 @@ _EJEMPLO_
 ```
 
 _Internamente el arreglo devuelto se contruye de:_
+
 | Nombre    | Tipo   | Descripción                 |
 | --------- | ------ | --------------------------- |
 | value     | String | identificador de la versión |
@@ -63,6 +64,7 @@ _EJEMPLO_
 ```
 
 _Internamente el arreglo devuelto se contruye de:_
+
 | Nombre    | Tipo   | Descripción              |
 | --------- | ------ | ------------------------ |
 | value     | String | identificador del libro  |
@@ -122,6 +124,7 @@ _EJEMPLO_
 ```
 
 _El objeto retornado esta contruido por:_
+
 | Nombre    | Tipo   | Descripción                 |
 | --------- | ------ | --------------------------- |
 | version   | String | clave de la versión         |
@@ -130,6 +133,7 @@ _El objeto retornado esta contruido por:_
 | contenido | Array  | arreglo con los versiculos  |
 
 _La propiedad contenido esta contruido por:_
+
 | Nombre      | Tipo   | Descripción                 |
 | ----------- | ------ | --------------------------- |
 | NoVersiculo | Number | Numero del versiculo        |
@@ -163,6 +167,7 @@ _EJEMPLO_
 ```
 
 _El objeto retornado esta contruido por:_
+
 | Nombre     | Tipo   | Descripción                 |
 | ---------- | ------ | --------------------------- |
 | version    | String | clave de la versión         |
@@ -170,6 +175,7 @@ _El objeto retornado esta contruido por:_
 | capitulos  | Array  | arreglo de capitulos        |
 
 _la propiedad capitulos está construido por:_
+
 | Nombre      | Tipo   | Descripción                                                           |
 | ----------- | ------ | --------------------------------------------------------------------- |
 | capitulo    | Number | Numero del capitulo                                                   |
@@ -204,6 +210,7 @@ _EJEMPLO_
 ```
 
 _El objeto retornado esta contruido por:_
+
 | Nombre    | Tipo   | Descripción                 |
 | --------- | ------ | --------------------------- |
 | version   | String | clave de la versión         |
@@ -212,6 +219,7 @@ _El objeto retornado esta contruido por:_
 | contenido | Array  | arreglo con los versiculos  |
 
 _La propiedad contenido esta contruido por:_
+
 | Nombre      | Tipo   | Descripción                 |
 | ----------- | ------ | --------------------------- |
 | NoVersiculo | Number | Numero del versiculo        |
@@ -230,6 +238,7 @@ _PARAMETROS_
 | versión          | String/Opcional | clave de la versión                                   |
 
 _El objeto retornado esta contruido por:_
+
 | Nombre     | Tipo   | Descripción                 |
 | ---------- | ------ | --------------------------- |
 | version    | String | clave de la versión         |
