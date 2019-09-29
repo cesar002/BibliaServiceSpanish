@@ -40,10 +40,7 @@ _EJEMPLO_
 _Internamente el arreglo devuelto se contruye de:_
 | Nombre    | Tipo   | Descripción                 |
 | --------- | ------ | --------------------------- |
-| value     | String  | nombre de la versión       |
-| identificador de la versión || --------- | ------ | --------------------------- |
-| libro
-| --------- | ------ | --------------------------- |
+| value     | String | identificador de la versión |
 | nombre    | String | nombre de la versión        |
 
 ---
@@ -68,9 +65,7 @@ _EJEMPLO_
 _Internamente el arreglo devuelto se contruye de:_
 | Nombre    | Tipo   | Descripción              |
 | --------- | ------ | ------------------------ |
-| value     | String  | nombre de la versión       |
-| identificador del libro  |   | --------- | ------ | ------------------------ |
-| libro
+| value     | String | identificador del libro  |
 | --------- | ------ | ------------------------ |
 | nombre    | String | nombre del libro         |
 
@@ -110,9 +105,7 @@ _PARAMETROS_
 | Nombre     | Tipo   | Descripción         |
 | ---------- | ------ | ------------------- |
 | version    | String | clave de la versión |
-| ---------- | ------ | ------------------- |
 | libro      | String | clave del libro     |
-| ---------- | ------ | ------------------- |
 | capitulo   | number | número del capitulo |
 
 _EJEMPLO_
@@ -132,18 +125,14 @@ _El objeto retornado esta contruido por:_
 | Nombre    | Tipo   | Descripción                 |
 | --------- | ------ | --------------------------- |
 | version   | String | clave de la versión         |
-| --------- | ------ | --------------------------- |
 | libro     | String | clave del libro             |
-| --------- | ------ | --------------------------- |
 | capitulo  | Number | número del capitulo         |
-| --------- | ------ | --------------------------- |
 | contenido | Array  | arreglo con los versiculos  |
 
 _La propiedad contenido esta contruido por:_
 | Nombre      | Tipo   | Descripción                 |
 | ----------- | ------ | --------------------------- |
 | NoVersiculo | Number | Numero del versiculo        |
-| ----------- | ------ | --------------------------- |
 | versiculo   | String | Texto del versiculo         |
 
 ---
@@ -156,11 +145,8 @@ _PARAMETROS_
 | Nombre           | Tipo   | Descripción                                        |
 | ---------------- | ------ | -------------------------------------------------- |
 | version          | String | clave de la versión                                |
-| ---------------- | ------ | -------------------------------------------------- |
 | libro            | String | clave del libro                                    |
-| ---------------- | ------ | -------------------------------------------------- |
 | capituloInicio   | number | número del capitulo en el que inicia la busqueda   |
-| ---------------- | ------ | -------------------------------------------------- |
 | capituloFin      | number | número del capitulo en el que finaliza la busqueda |
 
 _EJEMPLO_
@@ -180,16 +166,13 @@ _El objeto retornado esta contruido por:_
 | Nombre     | Tipo   | Descripción                 |
 | ---------- | ------ | --------------------------- |
 | version    | String | clave de la versión         |
-| ---------- | ------ | --------------------------- |
 | libro      | String | clave del libro             |
-| ---------- | ------ | --------------------------- |
 | capitulos  | Array  | arreglo de capitulos        |
 
 _la propiedad capitulos está construido por:_
 | Nombre      | Tipo   | Descripción                                                           |
 | ----------- | ------ | --------------------------------------------------------------------- |
 | capitulo    | Number | Numero del capitulo                                                   |
-| ----------- | ------ | --------------------------------------------------------------------- |
 | versiculos  | Array  | Array de versiculos similar al array de contenido del metodo buscar() |
 
 ---
@@ -202,13 +185,9 @@ _PARAMETROS_
 | Nombre           | Tipo   | Descripción                                        |
 | ---------------- | ------ | -------------------------------------------------- |
 | version          | String | clave de la versión                                |
-| ---------------- | ------ | -------------------------------------------------- |
 | libro            | String | clave del libro                                    |
-| ---------------- | ------ | -------------------------------------------------- |
 | capitulo         | number | número del capitulo                                |
-| ---------------- | ------ | -------------------------------------------------- |
 | versiculoInicio  | number | número del versiculo en el que inicia la busqueda  |
-| ---------------- | ------ | -------------------------------------------------- |
 | versiculoFin     | number | número del versiculo en el que finaliza la busqueda|
 
 _EJEMPLO_
@@ -228,18 +207,14 @@ _El objeto retornado esta contruido por:_
 | Nombre    | Tipo   | Descripción                 |
 | --------- | ------ | --------------------------- |
 | version   | String | clave de la versión         |
-| --------- | ------ | --------------------------- |
 | libro     | String | clave del libro             |
-| --------- | ------ | --------------------------- |
 | capitulo  | Number | número del capitulo         |
-| --------- | ------ | --------------------------- |
 | contenido | Array  | arreglo con los versiculos  |
 
 _La propiedad contenido esta contruido por:_
 | Nombre      | Tipo   | Descripción                 |
 | ----------- | ------ | --------------------------- |
 | NoVersiculo | Number | Numero del versiculo        |
-| ----------- | ------ | --------------------------- |
 | versiculo   | String | Texto del versiculo         |
 
 ---
@@ -252,14 +227,11 @@ _PARAMETROS_
 | Nombre           | Tipo            | Descripción                                           |
 | ---------------- | --------------- | ----------------------------------------------------- |
 | textoBusqueda    | String          | texto de busqueda, conformada por libro y el capitulo |
-| ---------------- | --------------- | ----------------------------------------------------- |
 | versión          | String/Opcional | clave de la versión                                   |
 
 _El objeto retornado esta contruido por:_
 | Nombre     | Tipo   | Descripción                 |
 | ---------- | ------ | --------------------------- |
 | version    | String | clave de la versión         |
-| ---------- | ------ | --------------------------- |
 | busqueda   | String | texto a buscar              |
-| ---------- | ------ | --------------------------- |
 | versiculos | Array  | Arraglo de versiculos       |
