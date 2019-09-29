@@ -27,6 +27,10 @@ const bibliaService = (function(){
         return new Promise(async (resolve, reject) =>{
             const $ = await request({
                 uri: HOME_PAGE,
+                headers:{
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+                },
                 transform: body => cheerio.load(body)
             })
 
@@ -61,6 +65,10 @@ const bibliaService = (function(){
         return new Promise(async (resolve, reject) =>{
             const $ = await request({
                 uri: HOME_PAGE,
+                headers:{
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+                },
                 transform: body => cheerio.load(body)
             })
 
@@ -98,6 +106,10 @@ const bibliaService = (function(){
             const $ = await request({
                 method: 'POST',
                 uri: CAPITULOS,
+                headers:{
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+                },
                 form: {
                     nombre: claveLibro,
                     lang: 'es',
@@ -141,6 +153,10 @@ const bibliaService = (function(){
         return new Promise(async (resolve, reject) =>{
             const $ = await request({
                 uri: `${HOME_PAGE}/${version}/${libro}-${capitulo}`,
+                headers:{
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+                },
                 transform: body => cheerio.load(body),
             })
             try{
@@ -192,6 +208,10 @@ const bibliaService = (function(){
             let _$ = await request({
                 method: 'POST',
                 uri: CAPITULOS,
+                headers:{
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+                },
                 form: {
                     nombre: libro,
                     lang: 'es',
@@ -217,6 +237,10 @@ const bibliaService = (function(){
             for(;capituloInicio <= capituloFin; capituloInicio++){
                 let $ = await request({
                     uri: `${HOME_PAGE}/${version}/${libro}-${capituloInicio}`,
+                    headers:{
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+                },
                     transform: body => cheerio.load(body),
                 })
                 let element = $('#imprimible')
@@ -307,6 +331,10 @@ const bibliaService = (function(){
         return new Promise(async (resolve, reject) =>{
             const $ = await request({
                 uri: `${BUSQUEDA_CONCORDANCIA}${Utils.convertirABusqueda(textoBusqueda)}&t=${version}&ant=tb`,
+                headers:{
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+                },
                 transform: body => cheerio.load(body)
             })
 
